@@ -1,0 +1,20 @@
+<div class="row border-bottom rounded text-light bg-dark p-3 m-4">
+  <div class="col-10">
+    
+    <h4 class="text-warning mb-4px pb-2">
+      {{ job['title'] }}
+    </h4>
+    <div>
+      <b>Location:</b> {{ job['location'] }}
+    </div>
+    {% if 'salary' in job %}
+    <div>
+      <b>Salary:</b> {{ job['salary'] }}
+    </div>
+    {% endif %}
+  </div>
+  <div class="col-2 d-flex flex-column align-items-center justify-content-center mb-2">
+    <button type="button" class="btn btn-outline-warning btn-md">Apply</button>
+  </div>
+
+</div>
